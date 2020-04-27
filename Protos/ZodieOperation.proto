@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "ZodieResponse.proto";
+import "ZodieRequest.proto";
+
+option csharp_namespace = "Generated";
+
+service ZodieService {
+	rpc Verify(ZodieRequest) returns (ZodieResponse);
+}
